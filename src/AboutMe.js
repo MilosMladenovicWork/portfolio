@@ -7,6 +7,7 @@ import ProjectImage from './ProjectImage'
 import BigDetail from './BigDetail'
 import BigTriangle from './BigTriangle'
 import MediumTriangle from './MediumTriangle'
+import CanvasThreeJs from './CanvasThreeJs'
 import './AboutMe.css'
 import Image from './images/project.png'
 
@@ -39,8 +40,10 @@ function AboutMe(props){
       <DotDetail position={{top:0,left:0}} colors={props.colors}/>
       <DotDetail position={{bottom:0,right:0}} colors={props.colors}/>
       <BigDetail colors={props.colors} appContainer={props.appContainer}>
-          <MediumTriangle {...props}/>
-          <BigTriangle {...props}/>
+          {/* <MediumTriangle {...props}/>
+          <BigTriangle {...props}/> */}
+        <CanvasThreeJs rotate={[0, -10, 10, 0]} {...props} distance={1}/>
+        <CanvasThreeJs rotate={[-10, 10, 0, -10]}  {...props} distance={-1}/>
       </BigDetail>
     </motion.div>
   )

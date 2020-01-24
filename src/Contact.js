@@ -12,8 +12,10 @@ import BigTriangle from './BigTriangle'
 import BigDetail from './BigDetail'
 import SmallTriangle from './SmallTriangle'
 import MediumTriangle from './MediumTriangle'
+import CanvasThreeJs from './CanvasThreeJs'
 import Form from './Form'
 import './Contact.css'
+
 
 function Contact(props){
   const [form, setForm] = useState({
@@ -128,12 +130,17 @@ function Contact(props){
       <DotDetail position={{top:0,left:0}} colors={props.colors}/>
       <DotDetail position={{bottom:0,right:0}} colors={props.colors}/>
       <BigDetail colors={props.colors} appContainer={props.appContainer}>
-        <SmallTriangle {...props}/>
+        {/* <SmallTriangle {...props}/>
         <BigTriangle {...props}/>
-        <MediumTriangle {...props}/>
+        <MediumTriangle {...props}/> */}
+        <CanvasThreeJs rotate={[20, 0, -20, 20]} {...props} distance={-4}/>
+        <CanvasThreeJs rotate={[0, -10, 10, 0]} {...props} distance={1}/>
+        <CanvasThreeJs rotate={[-10, 10, 0, -10]}  {...props} distance={-1}/>
       </BigDetail>
     </motion.div>
   )
 }
+
+
 
 export default Contact

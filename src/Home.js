@@ -12,6 +12,7 @@ import BigTriangle from './BigTriangle.js'
 import SmallTriangle from './SmallTriangle.js'
 import MediumTriangle from './MediumTriangle.js'
 import Tip from './Tip.js'
+import CanvasThreeJs from './CanvasThreeJs'
 
 function Home(props){
 
@@ -40,9 +41,12 @@ function Home(props){
       <DotDetail position={{top:0,left:0}} colors={props.colors}/>
       <DotDetail position={{bottom:0,right:0}} colors={props.colors}/>
       <BigDetail colors={props.colors} appContainer={props.appContainer}>
-        <SmallTriangle {...props}/>
+        {/* <SmallTriangle {...props}/>
         <BigTriangle {...props}/>
-        <MediumTriangle {...props}/>
+        <MediumTriangle {...props}/> */}
+        <CanvasThreeJs rotate={[20, 0, -20, 20]} {...props} distance={-4}/>
+        <CanvasThreeJs rotate={[0, -10, 10, 0]} {...props} distance={1}/>
+        <CanvasThreeJs rotate={[-10, 10, 0, -10]}  {...props} distance={-1}/>
       </BigDetail>
       <Tip colors={props.colors} delay={10} text={'You can change theme by pressing lamp button!'}/>
     </motion.div>
