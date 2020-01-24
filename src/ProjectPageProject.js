@@ -1,5 +1,5 @@
 import React from 'react'
-import {useLocation} from 'react-router-dom'
+import {useLocation, Link} from 'react-router-dom'
 import {motion} from 'framer-motion'
 import Project from './Project'
 import Heading from './Heading'
@@ -37,7 +37,9 @@ function ProjectPageProject(props){
             <Paragraph text={page.paragraph} colors={props.colors}/>
             <FixedDownBar>
                 <ButtonLeft colors={props.colors} link={leftLink}/>
-                <ButtonGlowing text='VISIT' colors={props.colors}/>
+                <a rel="noopener noreferrer" target='_blank' href={props.project.address}>
+                    <ButtonGlowing text='VISIT' colors={props.colors}/>
+                </a>
                 <ButtonRight colors={props.colors} link={rightLink}/>
             </FixedDownBar>
         </motion.div>

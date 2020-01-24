@@ -11,4 +11,13 @@
         padding-top:0;
         text-align: center;
     }
+    .portfolio-page-project .fixed-down-bar{
+        height:60vh;
+    }
+    .portfolio-page-project .fixed-down-bar .button-left{
+        align-self:flex-start
+    }
+    .portfolio-page-project .fixed-down-bar .button-right{
+        align-self:flex-start
+    }
 }

@@ -34,8 +34,8 @@ function Home(props){
       <Link to='/portfolio' style={{display:'flex', alignItems:'center', textDecoration:'none'}}>
         <ButtonGlowing text='VIEW MY WORK' colors={props.colors}/>
       </Link>
-      <Link to='/hire' style={{display:'flex', alignItems:'center', textDecoration:'none'}}>
-        <ButtonClassic text='HIRE ME' colors={props.colors}/>
+      <Link to='/contact' style={{display:'flex', alignItems:'center', textDecoration:'none'}}>
+        <ButtonClassic text='CONTACT ME' colors={props.colors}/>
       </Link>
       <DotDetail position={{top:0,left:0}} colors={props.colors}/>
       <DotDetail position={{bottom:0,right:0}} colors={props.colors}/>
