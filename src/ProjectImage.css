@@ -1,0 +1,16 @@
+.project-image{
+  display:flex;
+  justify-content: center;
+}
+
+.project-image img{
+  width:100%;
+  border-radius:10px;
+  z-index:2;
+}
+
+@media screen and (min-width:1200px){
+  .project-image img{
+    width:45%;
+  }
+}

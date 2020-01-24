@@ -1,0 +1,25 @@
+.social-button{
+  width:15vw;
+  height:15vw;
+  padding:0.5vh 1vw;
+  margin:0 5vw;
+  margin-bottom:2vh;
+  border-radius:10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.social-button svg{
+  height:100%;
+}
+
+@media screen and (min-width:1200px){
+  .social-button{
+    width:2.5vw;
+    height:2.5vw;
+    padding:0.5vh;
+    margin:0;
+    margin-bottom:2vh;
+  }
+}

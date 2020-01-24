@@ -1,0 +1,48 @@
+.form{
+  width:90%;
+  margin:auto;
+  padding-bottom:15vh;
+  z-index:1;
+}
+
+.form input{
+  background:none;
+  border:none;
+  width:100%;
+  margin-bottom:4vh;
+  font-weight:600;
+}
+
+.form textarea{
+  background:none;
+  border:none;
+  width:100%;
+  margin-bottom:4vh;
+  min-height:20vh;
+  resize:vertical;
+  font-weight:600;
+}
+
+.form .button-glowing{
+  float:right;
+}
+
+.form input:focus{
+  outline:none
+}
+
+.form textarea:focus{
+  outline:none
+}
+
+.form .button-glowing{
+  float:right;
+}
+
+@media screen and (min-width:1200px){
+  .form{
+    width:30%;
+    margin-left:0;
+    margin-right:auto;
+  }
+}

@@ -1,0 +1,12 @@
+.portfolio{
+  margin-top:7.81vh;
+  padding:3.91vh 0;
+}
+
+@media screen and (min-width:1200px){
+  .portfolio{
+    max-width:85vw;
+    margin:auto;
+    padding-top:0;
+  }
+}

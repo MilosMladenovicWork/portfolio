@@ -1,0 +1,31 @@
+.main-text{
+  margin:auto;
+  padding-bottom:7.25vh;
+  width:73vw;
+  min-height:20vh;
+  font-size:36px;
+  font-weight:700;
+  text-align:center;
+  transition:0.5s;
+}
+
+.highlite{
+  color:rgba(125, 125, 125);
+  opacity:0.75;
+  transition:0.5s;
+}
+
+a{
+  color:inherit;
+}
+
+@media screen and (min-width:1200px){
+  .main-text{
+    margin:0;
+    margin-right: auto;
+    text-align: left;
+    padding-bottom:10vh;
+    min-height:5vh;
+    width:50vw;
+  }
+}

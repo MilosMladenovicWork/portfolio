@@ -1,0 +1,23 @@
+.contact{
+  padding:3.91vh 0;
+  margin:auto;
+  margin-top:7.81vh;
+  max-width:85vw;
+  display:flex;
+  flex-direction: column;
+  position:relative;
+}
+
+.contact .fixed-down-bar{
+  width:100%;
+}
+
+@media screen and (min-width:1200px){
+  .contact{
+    margin-top:0;
+  }
+  .contact .fixed-down-bar{
+    width:20vw;
+    margin-left:7.5vw;
+  }
+}

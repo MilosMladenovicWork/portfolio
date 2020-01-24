@@ -1,0 +1,14 @@
+.portfolio-page-project .project .project-heading{
+    padding-bottom:2vh;
+}
+
+.portfolio-page-project .paragraph{
+    padding-bottom:15vh;
+}
+
+@media screen and (min-width:1200px){
+    .portfolio-page-project .heading{
+        padding-top:0;
+        text-align: center;
+    }
+}

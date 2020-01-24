@@ -1,0 +1,24 @@
+.button-glowing{
+  display:inline-block;
+  border:none;
+  border-radius:10px;
+  min-width:54.3vw;
+  margin:auto;
+  padding:1.7vh 8.45vw;
+  font-size:20px;
+  font-weight:800;
+  margin-bottom:3.125vh;
+    z-index:2;
+    transition:0.5s;
+}
+
+@media screen and (min-width:1200px){
+  .button-glowing{
+    margin:0;
+    margin-bottom:3.125vh;
+    min-width:1vw;
+    width:fit-content;
+    padding:1.7vh 2vw;
+    height:fit-content;
+  }
+}

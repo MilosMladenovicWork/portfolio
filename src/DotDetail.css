@@ -1,0 +1,12 @@
+.dot-detail{
+  position:absolute;
+  z-index:0;
+  transition:0.5s;
+  width:20vw;
+}
+
+@media screen and(min-width:1200px){
+  .dot-detail{
+    width:15vw;
+  }
+}

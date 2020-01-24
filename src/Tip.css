@@ -1,0 +1,41 @@
+.tip{
+  width:93%;
+  position:fixed;
+  bottom:2vh;
+  left:3.5%;
+  transform:translateY(100vh);
+  border-radius: 10px;
+  padding:1vh 2vw;
+  box-sizing: border-box;
+  z-index:10;
+}
+
+.tip p{
+  margin:0;
+}
+
+.tip p:first-of-type{
+  margin-bottom:2vh;
+  font-size:20px;
+}
+
+.close-button{
+  width:3.5vw;
+}
+
+.close-container{
+  position:absolute;
+  top:1vh;
+  right:2vw;
+}
+
+@media screen and (min-width:1200px){
+  .tip{
+    width:20vw;
+    padding:1vh 1vw;
+    left:72.5vw;
+  }
+  .close-container{
+    right:0;
+  }
+}

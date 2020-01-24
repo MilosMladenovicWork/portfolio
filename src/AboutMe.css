@@ -1,0 +1,29 @@
+.about-me{
+  padding:3.91vh 0;
+  margin:auto;
+  margin-top:7.81vh;
+  max-width:85vw;
+  display:flex;
+  flex-direction: column;
+  position:relative;
+}
+
+.about-me .heading{
+  margin-bottom:3vh;
+}
+
+.about-me .main-text{
+  padding-top:3vh;
+}
+
+@media screen and (min-width:1200px){
+  .about-me{
+    margin-top:0;
+  }
+  .about-me .project-image{
+    justify-content:flex-start;
+  }
+  .about-me .project-image img{
+    width:30vw;
+  }
+}
