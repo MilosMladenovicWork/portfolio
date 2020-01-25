@@ -36,21 +36,21 @@ function App() {
   const [lightTheme, setLightTheme] = useState(false)
   const [openMenu, setOpenMenu] = useState(false)
   const [projects, setProjects] = useState([
-    {
-      idea:{
-        image:PerunImage, 
-        subheading:"IDEA",
-        paragraph:'I built this website from design my client from Fiverr made in AdobeXD.',
-      },
-      technologies:{
-        image:PerunTechnologies, 
-        subheading:'TECHNOLOGIES',
-        paragraph:'Techhnologies I used are: HTML, SCSS, JavaScript, APIs: sal.js, swiper.js, intersectionObserver, laxxx.js, pace.js.'
-      },
-      projectName:'Perun',
-      detailPosition:{bottom:0,left:0},
-      address:'https://perunperun.netlify.com'
-    },
+    // {
+    //   idea:{
+    //     image:PerunImage, 
+    //     subheading:"IDEA",
+    //     paragraph:'I built this website from design my client from Fiverr made in AdobeXD.',
+    //   },
+    //   technologies:{
+    //     image:PerunTechnologies, 
+    //     subheading:'TECHNOLOGIES',
+    //     paragraph:'Techhnologies I used are: HTML, SCSS, JavaScript, APIs: sal.js, swiper.js, intersectionObserver, laxxx.js, pace.js.'
+    //   },
+    //   projectName:'Perun',
+    //   detailPosition:{bottom:0,left:0},
+    //   address:'https://perunperun.netlify.com'
+    // },
     {
       idea:{
         image:RealEstateImage, 
