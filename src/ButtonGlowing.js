@@ -11,7 +11,11 @@ function ButtonGlowing(props){
         backgroundColor:props.colors.accentColor,
         boxShadow:props.colors.shadow,
         display:props.submit || props.submit === undefined ? 'block' : 'none' 
-      }}>
+      }}
+      onClick={
+        props.clickHandler
+      }
+      >
       {props.text}
     </motion.button>
   )

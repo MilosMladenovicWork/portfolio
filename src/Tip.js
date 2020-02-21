@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import './Tip.css'
 import CloseButton from './CloseButton.js'
 import {motion, useAnimation} from 'framer-motion'
@@ -14,6 +14,18 @@ function Tip(props){
   }
 
   const controls = useAnimation()
+
+  useEffect(() => {
+    if(props.open === false){
+      if(close === false){
+        setClose(true)
+      }
+    }else if(props.open === true){
+      if(close === true ){
+        setClose(false)
+      }
+    }
+  }, [props.open])
 
   if(close){
     controls.start({
@@ -34,7 +46,7 @@ function Tip(props){
       backgroundColor:props.colors.mainColor,
       boxShadow:props.colors.shadow
       }}>
-      <p style={{color:props.colors.accentColor}}>Did you know?</p>
+      <p style={{color:props.colors.accentColor}}>{props.title || 'Did you know?'}</p>
       <p style={{color:props.colors.textColor}}>{props.text}</p>
       <div class='close-container'>
         <CloseButton closeClicked={closeClicked} colors={props.colors}/>

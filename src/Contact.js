@@ -14,6 +14,7 @@ import SmallTriangle from './SmallTriangle'
 import MediumTriangle from './MediumTriangle'
 import CanvasThreeJs from './CanvasThreeJs'
 import Form from './Form'
+import Tip from './Tip'
 import './Contact.css'
 
 
@@ -25,6 +26,10 @@ function Contact(props){
     submit:false
   }
   )
+
+  const [serverMessage, setServerMessage] = useState(null)
+
+  const [notification, setNotification] = useState(false)
 
   const constraints = {
     email:{
@@ -60,6 +65,24 @@ function Contact(props){
     }
   }
 
+  async function postFormData(url, data){
+    const response = await fetch(url, {
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      method:'POST',
+      mode:'cors',
+      body:JSON.stringify({
+        name:data.name,
+        email:data.email,
+        message:data.message
+      })
+    });
+
+    return response.json()
+  }
+
   useEffect(()=>{
     formValidation()
   }, [form.email, form.name, form.message])
@@ -75,8 +98,17 @@ function Contact(props){
     })
   }
 
+  const clickHandler = (e) => {
+    e.preventDefault()
+    setNotification(false)
+    postFormData('https://server-personal-use.herokuapp.com/contact', form)
+      .then((data) => {
+        setServerMessage(data.message)
+        setNotification(true)
+        console.log(data)
+      }).catch(e => console.log(e));
+  }
 
-  
 
   return(
     <motion.div
@@ -120,6 +152,7 @@ function Contact(props){
         <ButtonGlowing
           colors={props.colors} 
           submit={form.submit} 
+          clickHandler={clickHandler}
           text={'Submit'} />
       </Form>
       <FixedDownBar>
@@ -137,6 +170,7 @@ function Contact(props){
         <CanvasThreeJs rotate={[0, -10, 10, 0]} {...props} distance={1}/>
         <CanvasThreeJs rotate={[-10, 10, 0, -10]}  {...props} distance={-1}/>
       </BigDetail>
+      <Tip colors={props.colors} title={'Hi there!'} open={notification} text={serverMessage}/>
     </motion.div>
   )
 }
