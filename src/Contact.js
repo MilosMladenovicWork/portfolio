@@ -15,6 +15,7 @@ import MediumTriangle from './MediumTriangle'
 import CanvasThreeJs from './CanvasThreeJs'
 import Form from './Form'
 import Tip from './Tip'
+import LoadingScreen from './LoadingScreen'
 import './Contact.css'
 
 
@@ -30,6 +31,7 @@ function Contact(props){
   const [serverMessage, setServerMessage] = useState(null)
 
   const [notification, setNotification] = useState(false)
+  const [loading, setLoading] = useState(false)
 
   const constraints = {
     email:{
@@ -100,12 +102,13 @@ function Contact(props){
 
   const clickHandler = (e) => {
     e.preventDefault()
+    setLoading(true)
     setNotification(false)
     postFormData('https://server-personal-use.herokuapp.com/contact', form)
       .then((data) => {
+        setLoading(false)
         setServerMessage(data.message)
         setNotification(true)
-        console.log(data)
       }).catch(e => console.log(e));
   }
 
@@ -163,14 +166,12 @@ function Contact(props){
       <DotDetail position={{top:0,left:0}} colors={props.colors}/>
       <DotDetail position={{bottom:0,right:0}} colors={props.colors}/>
       <BigDetail colors={props.colors} appContainer={props.appContainer}>
-        {/* <SmallTriangle {...props}/>
-        <BigTriangle {...props}/>
-        <MediumTriangle {...props}/> */}
         <CanvasThreeJs rotate={[20, 0, -20, 20]} {...props} distance={-4}/>
         <CanvasThreeJs rotate={[0, -10, 10, 0]} {...props} distance={1}/>
         <CanvasThreeJs rotate={[-10, 10, 0, -10]}  {...props} distance={-1}/>
       </BigDetail>
       <Tip colors={props.colors} title={'Hi there!'} open={notification} text={serverMessage}/>
+      <LoadingScreen colors={props.colors} loading={loading}/>
     </motion.div>
   )
 }
