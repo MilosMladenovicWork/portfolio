@@ -4,7 +4,6 @@
   bottom:2vh;
   left:3.5%;
   transform:translateY(100vh);
-  border-radius: 10px;
   padding:1vh 2vw;
   box-sizing: border-box;
   z-index:10;
@@ -32,10 +31,14 @@
 @media screen and (min-width:1200px){
   .tip{
     width:20vw;
-    padding:1vh 1vw;
+    padding:2vh 2vw;
     left:72.5vw;
   }
+  .close-button{
+    width:1vw;
+  }
   .close-container{
-    right:0;
+    top:2vh;
+    right:2vw;
   }
 }

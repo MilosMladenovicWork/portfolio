@@ -7,10 +7,11 @@ function LoadingScreen(props){
         <div 
             className='loading-screen'
             style={{
-                display:props.loading === true ? 'flex' : 'none'
+                display:props.loading === true ? 'flex' : 'none',
+                backgroundColor:props.colors.mainColor
             }}
             >
-            <CanvasThreeJs rotate={[0, -10, 10, 0]} {...props} distance={-4}/>
+            <CanvasThreeJs {...props} distance={-4}/>
             <p style={{color:props.colors.accentColor}}>Loading</p>
         </div>
     )
