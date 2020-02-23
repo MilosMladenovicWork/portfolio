@@ -28,8 +28,8 @@ function Home(props){
       <HomeText 
         colors={props.colors} 
         sentences={[
+          `<span class='highlite'> I am building</span> stunning websites.`,
           `<span class='highlite'>My name is</span> Milos Mladenovic.`,
-          `<span class='highlite'> I am a</span> Front End Web Developer.`
         ]
           }/>
       <Link to='/portfolio' style={{display:'flex', alignItems:'center', textDecoration:'none'}}>
