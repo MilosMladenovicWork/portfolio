@@ -6,9 +6,6 @@ function Box(props){
   // This reference will give us direct access to the mesh
   const mesh = useRef()
   
-  // Set up state for the hovered and active state
-  const [active, setActive] = useState(false)
-  
   // Rotate mesh every frame, this is outside of React without overhead
   useFrame(() => (mesh.current.rotation.y += 0.01))
   
@@ -17,7 +14,7 @@ function Box(props){
         {...props}
         ref={mesh}
         scale={[1.2, 2, 1]}
-        onClick={e => setActive(!active)}>
+        >
         <octahedronGeometry attach="geometry" />
         <meshPhysicalMaterial  attach="material" metalness={0.4} color={props.colors.accentColor} />
       </mesh>
