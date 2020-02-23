@@ -33,7 +33,33 @@ function App() {
   const [accentColor, setAccentColor] = useState()
   const [textColor, setTextColor] = useState()
   const [shadow, setShadow] = useState()
-  const [lightTheme, setLightTheme] = useState(false)
+  const [lightTheme, setLightTheme] = useState(0)
+  const [themeArray, setThemeArray] = useState([
+    {
+      mainColor:'#020B16',
+      accentColor:'#00FFFF',
+      textColor:'#ffffff',
+      shadow:'5px 5px 6px rgba(0, 0, 0, 0.57), -5px -5px 6px rgba(255, 255, 255, 0.03)'
+    },
+    {
+      mainColor:'rgb(243,243,243)',
+      accentColor:'#1a4982',
+      textColor:'#051427',
+      shadow:'5px 5px 6px rgba(0, 0, 0, 0.35), -5px -5px 6px rgba(255, 255, 255, 1)'
+    },
+    {
+      mainColor:'rgb(11,11,11)',
+      accentColor:'rgb(255, 237, 2)',
+      textColor:'#ffffff',
+      shadow:'5px 5px 6px rgba(0, 0, 0, 0.57), -5px -5px 6px rgba(255, 255, 255, 0.03)'
+    },
+    {
+      mainColor:'rgb(255,151,135)',
+      accentColor:'rgb(109,18,157)',
+      textColor:'#ffffff',
+      shadow:'5px 5px 6px rgba(0, 0, 0, 0.07), -5px -5px 6px rgba(255, 255, 255, 0.03)'
+    },
+  ])
   const [openMenu, setOpenMenu] = useState(false)
   const [projects, setProjects] = useState([
     {
@@ -145,22 +171,18 @@ function App() {
 
   
   useEffect(() => {
-    if(lightTheme === true){
-      setMainColor('rgb(243,243,243)')
-      setTextColor('#051427')
-      setAccentColor('#1a4982')
-      setShadow('5px 5px 6px rgba(0, 0, 0, 0.35), -5px -5px 6px rgba(255, 255, 255, 1)')
-    }else if(lightTheme === false){
-      setMainColor('#020B16')
-      setAccentColor('#00FFFF')
-      setTextColor('#ffffff')
-      setShadow('5px 5px 6px rgba(0, 0, 0, 0.57), -5px -5px 6px rgba(255, 255, 255, 0.03)')
+    if(themeArray.length === lightTheme){
+      return setLightTheme(0)
     }
+    setMainColor(themeArray[lightTheme].mainColor)
+    setTextColor(themeArray[lightTheme].textColor)
+    setAccentColor(themeArray[lightTheme].accentColor)
+    setShadow(themeArray[lightTheme].shadow)
   }, [lightTheme])
 
   const toggleLight = () =>{
     setLightTheme((prevState) => {
-      return !prevState
+      return prevState + 1
     })
   }
 
