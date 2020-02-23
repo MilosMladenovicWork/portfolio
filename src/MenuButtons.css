@@ -1,0 +1,12 @@
+
+@media (min-width:1200px){
+    .menu-buttons{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+    
+    .menu-buttons .button-classic{
+        margin:0;
+    }
+}

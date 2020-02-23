@@ -9,7 +9,6 @@ nav{
 
 .light-button{
   margin-left: 6vw;
-  height:5vh;
   width:5vh;
 }
 
@@ -20,7 +19,6 @@ nav{
 
 .menu-button{
   margin-right:6vw;
-  height:5vh;
   width:5vh;
   position:relative;
 } 

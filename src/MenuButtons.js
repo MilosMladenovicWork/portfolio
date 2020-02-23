@@ -1,6 +1,7 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
 import ButtonClassic from './ButtonClassic.js'
+import './MenuButtons.css'
 import './activeLink.css'
 
 function MenuButtons(props){
