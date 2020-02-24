@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import {Link} from 'react-router-dom'
 import {motion} from 'framer-motion'
 import Heading from './Heading.js'
@@ -6,6 +6,8 @@ import Project from './Project.js'
 import './Portfolio.css'
 
 function Portfolio(props){
+
+
   const projects = props.projects.map((project) => 
   <Link to={`/portfolio/${project.projectName}/idea`}>
     <Project 
