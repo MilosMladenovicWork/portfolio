@@ -47,7 +47,7 @@ function MenuButton(props){
   }
 
   return(
-    <motion.div class='menu-button'  onClick={() => {props.toggleMenu()}}>
+    <motion.div class='menu-button'  onClick={() => {props.toggleMenu()}} style={{cursor:"pointer"}}>
       <motion.div animate={controlsOpen} class='open-menu'>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 27">
           <g id="Group_4" data-name="Group 4" transform="translate(-463.5 -37)">

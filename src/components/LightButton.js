@@ -4,7 +4,7 @@ function LightButton(props){
   return(
     <svg onClick={() => {
       props.toggleLight()
-    }} className='light-button' xmlns="http://www.w3.org/2000/svg" width="51" height="52" viewBox="0 0 51 52">
+    }} style={{cursor:"pointer"}}className='light-button' xmlns="http://www.w3.org/2000/svg" width="51" height="52" viewBox="0 0 51 52">
       <g id="Group_36" data-name="Group 36" transform="translate(-27 -20)">
         <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(44 50)" fill="none" stroke={props.colors.textColor} strokeWidth="3">
           <circle style={{transition:'0.5s'}} cx="8.5" cy="8.5" r="8.5" stroke="none"/>
