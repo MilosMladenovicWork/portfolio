@@ -1,7 +1,7 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import {Link} from 'react-router-dom'
 import {motion} from 'framer-motion'
-import Heading from './Heading.js'
+import Heading from '../components/Heading.js'
 import Project from './Project.js'
 import './Portfolio.css'
 

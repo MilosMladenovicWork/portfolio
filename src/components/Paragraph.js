@@ -1,6 +1,6 @@
 import React from 'react'
+import Typed from 'react-typed'
 import './Paragraph.css'
-import Typed from '../node_modules/react-typed'
 
 function Paragraph(props){
   return(

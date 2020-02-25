@@ -1,8 +1,8 @@
 import React from 'react'
 import VisibilitySensor from 'react-visibility-sensor'
-import ProjectImage from './ProjectImage'
-import ProjectHeading from './ProjectHeading'
-import DotDetail from './DotDetail'
+import ProjectImage from '../components/ProjectImage'
+import ProjectHeading from '../components/ProjectHeading'
+import DotDetail from '../components/DotDetail'
 import './Project.css'
 
 function Project(props){

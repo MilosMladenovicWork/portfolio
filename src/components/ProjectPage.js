@@ -1,5 +1,5 @@
 import React from 'react'
-import {Switch, Route, useLocation} from 'react-router-dom'
+import {useLocation} from 'react-router-dom'
 import ProjectPageProject from './ProjectPageProject'
 
 function ProjectPage(props){

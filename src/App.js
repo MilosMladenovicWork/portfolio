@@ -2,13 +2,13 @@ import React, {useState, useEffect, useRef} from 'react';
 import {Switch, Route, useLocation} from 'react-router-dom'
 import {AnimatePresence} from 'framer-motion'
 import './App.css';
-import NavBar from './NavBar.js'
-import Home from './Home.js'
-import Menu from './Menu.js'
-import Portfolio from './Portfolio.js'
-import ProjectPage from './ProjectPage.js'
-import AboutMe from './AboutMe.js'
-import Contact from './Contact.js'
+import NavBar from './components/NavBar.js'
+import Home from './pages/Home.js'
+import Menu from './components/Menu.js'
+import Portfolio from './pages/Portfolio.js'
+import ProjectPage from './components/ProjectPage.js'
+import AboutMe from './pages/AboutMe.js'
+import Contact from './pages/Contact.js'
 import MovieZoneImage from './images/MovieZone.png'
 import MovieZoneTechnologies from './images/MovieZoneTechnologies.png'
 import RealEstateImage from './images/RealEstate.png'
@@ -205,7 +205,13 @@ function App() {
       />
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>
-          <Route path='/' exact render={(props) => <Home appContainer={appContainer} colors={{mainColor, accentColor, textColor, shadow}}/>}/>
+          <Route path='/' exact 
+            render={(props) => 
+            <Home 
+              appContainer={appContainer} 
+              colors={{mainColor, accentColor, textColor, shadow}}
+              />}
+            />
           <Route path='/portfolio' exact 
             render={(props) => 
               <Portfolio 
@@ -215,20 +221,30 @@ function App() {
           />
           <Route path='/about' exact
             render={(props) =>
-              <AboutMe appContainer={appContainer} projects={projects} colors={{mainColor,accentColor,textColor,shadow}}/>
-            }
+              <AboutMe 
+                appContainer={appContainer} 
+                projects={projects} 
+                colors={{mainColor,accentColor,textColor,shadow}}
+              />}
           />
           <Route path='/contact' exact
             render={(props) =>
-              <Contact appContainer={appContainer} projects={projects} colors={{mainColor,accentColor,textColor,shadow}}/>
-            }
+              <Contact 
+                appContainer={appContainer} 
+                projects={projects} 
+                colors={{mainColor,accentColor,textColor,shadow}}
+              />}
           />
           <Switch location={location} key={location.pathname}>
-            <Route path='/portfolio/:projectName/:page' exact render={(props) => <ProjectPage
-              {...props}
-              colors={{mainColor, accentColor, textColor, shadow}}
-              projects={projects}
-              />}/> 
+            <Route 
+              path='/portfolio/:projectName/:page' exact 
+              render={(props) =>
+                <ProjectPage
+                {...props}
+                colors={{mainColor, accentColor, textColor, shadow}}
+                projects={projects}
+              />}
+            /> 
           </Switch>
         </Switch>
       </AnimatePresence>

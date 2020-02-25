@@ -1,6 +1,6 @@
 import React from 'react'
+import Typed from 'react-typed'
 import './Heading.css'
-import Typed from '../node_modules/react-typed'
 
 
 

@@ -1,6 +1,5 @@
 import React from 'react'
 import './BigDetail.css'
-import {motion} from 'framer-motion'
 
 function BigDetail(props){
   return(

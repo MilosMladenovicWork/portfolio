@@ -1,15 +1,13 @@
 import React from 'react'
 import {motion} from 'framer-motion'
-import Heading from './Heading'
-import HomeText from './HomeText'
-import DotDetail from './DotDetail'
-import ProjectImage from './ProjectImage'
-import BigDetail from './BigDetail'
-import BigTriangle from './BigTriangle'
-import MediumTriangle from './MediumTriangle'
-import CanvasThreeJs from './CanvasThreeJs'
+import Heading from '../components/Heading'
+import HomeText from '../components/HomeText'
+import DotDetail from '../components/DotDetail'
+import ProjectImage from '../components/ProjectImage'
+import BigDetail from '../components/BigDetail'
+import CanvasThreeJs from '../components/CanvasThreeJs'
 import './AboutMe.css'
-import Image from './images/project.png'
+import Image from '../images/project.png'
 
 function AboutMe(props){
   return(

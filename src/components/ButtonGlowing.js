@@ -1,6 +1,6 @@
 import React from 'react'
-import './ButtonGlowing.css'
 import {motion} from 'framer-motion'
+import './ButtonGlowing.css'
 
 function ButtonGlowing(props){
   return(
