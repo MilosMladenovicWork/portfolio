@@ -1,8 +1,8 @@
 import React, { useRef } from 'react'
 import { useFrame } from 'react-three-fiber'
-import './Box.css'
+import './Octahedron.css'
 
-function Box(props){
+function Octahedron(props){
   const mesh = useRef()
   
   useFrame(() => (mesh.current.rotation.y += 0.01))
@@ -19,4 +19,4 @@ function Box(props){
   )
 }
 
-export default Box
+export default Octahedron

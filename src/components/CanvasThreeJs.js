@@ -1,7 +1,7 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 import { Canvas } from 'react-three-fiber'
-import Box from './3DBox.js'
+import Box from './Octahedron.js'
 import './Canvas.css'
 
 function CanvasThreeJs(props){

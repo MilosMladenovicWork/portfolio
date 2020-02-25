@@ -13,6 +13,8 @@ import CanvasThreeJs from '../components/CanvasThreeJs'
 import Form from '../components/Form'
 import Tip from '../components/Tip'
 import LoadingScreen from '../components/LoadingScreen'
+import InputField from '../components/InputField'
+import InputTextarea from '../components/InputTextarea'
 import './Contact.css'
 
 
@@ -120,7 +122,10 @@ function Contact(props){
     >
       <Heading text='Contact me' colors={props.colors}/>
       <Form colors={props.colors}>
-        <input 
+        <InputField colors={props.colors} form={form} name={'name'} placeholder={'Name'} type={'text'} changeHandler={changeHandler}/>
+        <InputField colors={props.colors} form={form} name={'email'} placeholder={'Email'} type={'email'} changeHandler={changeHandler}/>
+        <InputTextarea colors={props.colors} form={form} name={'message'} placeholder={'Message'} changeHandler={changeHandler}/>
+        {/* <input 
           onChange={(e)=>{changeHandler(e)}}
           type='text' 
           value={form.name}
@@ -139,8 +144,8 @@ function Contact(props){
           style={{
             borderBottom:`3px solid ${props.colors.textColor}`,
             color:props.colors.textColor}}
-        />
-        <textarea 
+        /> */}
+        {/* <textarea 
           onChange={(e)=>{changeHandler(e)}}
           value={form.message}
           placeholder='Message'
@@ -148,7 +153,7 @@ function Contact(props){
           style={{
             borderBottom:`3px solid ${props.colors.textColor}`,
             color:props.colors.textColor}}>
-        </textarea>
+        </textarea> */}
         <ButtonGlowing
           colors={props.colors} 
           submit={form.submit} 
