@@ -1,5 +1,5 @@
 import React from 'react'
-import './BigDetail.css'
+import './styles/BigDetail.css'
 
 function BigDetail(props){
   return(

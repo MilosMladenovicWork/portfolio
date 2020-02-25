@@ -1,5 +1,5 @@
 import React from 'react'
-import './HomeText.css'
+import './styles/HomeText.css'
 import Typed from 'react-typed'
 
 function HomeText(props){

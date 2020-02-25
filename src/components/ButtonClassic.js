@@ -1,5 +1,5 @@
 import React from 'react'
-import './ButtonClassic.css'
+import './styles/ButtonClassic.css'
 
 function ButtonClassic(props){
   return(

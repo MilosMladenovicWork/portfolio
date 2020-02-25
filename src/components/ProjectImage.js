@@ -1,5 +1,5 @@
 import React from 'react'
-import './ProjectImage.css'
+import './styles/ProjectImage.css'
 
 function ProjectImage(props){
   return(

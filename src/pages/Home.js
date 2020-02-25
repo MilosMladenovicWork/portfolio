@@ -1,7 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import {motion} from 'framer-motion'
-import './Home.css'
 import Heading from '../components/Heading.js'
 import HomeText from '../components/HomeText.js'
 import ButtonGlowing from '../components/ButtonGlowing.js'
@@ -10,6 +9,7 @@ import DotDetail from '../components/DotDetail.js'
 import BigDetail from '../components/BigDetail.js'
 import Tip from '../components/Tip.js'
 import CanvasThreeJs from '../components/CanvasThreeJs'
+import './styles/Home.css'
 
 function Home(props){
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import CanvasThreeJs from './CanvasThreeJs'
-import './LoadingScreen.css'
+import './styles/LoadingScreen.css'
 
 function LoadingScreen(props){
     return(

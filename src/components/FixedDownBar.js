@@ -1,5 +1,5 @@
 import React from 'react'
-import './FixedDownBar.css'
+import './styles/FixedDownBar.css'
 
 function FixedDownBar(props){
     return(

@@ -3,7 +3,7 @@ import LightButton from './LightButton'
 import Logo from './Logo'
 import MenuButton from './MenuButton'
 import MenuButtons from './MenuButtons'
-import './NavBar.css'
+import './styles/NavBar.css'
 
 function NavBar(props){
   if(window.outerWidth >= 1200){

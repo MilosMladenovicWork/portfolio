@@ -1,5 +1,5 @@
 import React from 'react'
-import './ProjectHeading.css'
+import './styles/ProjectHeading.css'
 
 function ProjectHeading(props){
   return(

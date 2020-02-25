@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import {motion} from 'framer-motion'
 import Heading from '../components/Heading.js'
 import Project from './Project.js'
-import './Portfolio.css'
+import './styles/Portfolio.css'
 
 function Portfolio(props){
 

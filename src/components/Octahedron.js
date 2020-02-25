@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import { useFrame } from 'react-three-fiber'
-import './Octahedron.css'
+import './styles/Octahedron.css'
 
 function Octahedron(props){
   const mesh = useRef()

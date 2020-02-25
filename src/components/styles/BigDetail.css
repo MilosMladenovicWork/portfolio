@@ -9,17 +9,6 @@
   display:none;
 }
 
-.big-detail .big-triangle{
-  width:40%;
-}
-.big-detail .small-triangle{
-  width:20%;
-}
-
-.big-detail .medium-triangle{
-  width:30%;
-}
-
 @media screen and (min-width:1200px){
   .big-detail{
     position:absolute;

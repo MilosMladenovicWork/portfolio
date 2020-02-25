@@ -1,5 +1,5 @@
 import React from 'react'
-import './DotDetail.css'
+import './styles/DotDetail.css'
 import {motion} from 'framer-motion'
 
 function DotDetail(props){

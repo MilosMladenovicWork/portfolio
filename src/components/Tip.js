@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import './Tip.css'
+import './styles/Tip.css'
 import CloseButton from './CloseButton.js'
 import {motion, useAnimation} from 'framer-motion'
 

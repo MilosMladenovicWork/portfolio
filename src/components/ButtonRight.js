@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import './ButtonRight.css'
+import './styles/ButtonRight.css'
 
 function ButtonRight(props){
     return(

@@ -15,7 +15,7 @@ import Tip from '../components/Tip'
 import LoadingScreen from '../components/LoadingScreen'
 import InputField from '../components/InputField'
 import InputTextarea from '../components/InputTextarea'
-import './Contact.css'
+import './styles/Contact.css'
 
 
 function Contact(props){

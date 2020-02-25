@@ -1,5 +1,5 @@
 import React from 'react'
-import './SocialButton.css'
+import './styles/SocialButton.css'
 
 function SocialButton(props){
   return(

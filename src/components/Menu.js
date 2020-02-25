@@ -4,7 +4,7 @@ import FixedDownBar from './FixedDownBar'
 import InstagramLink from './InstagramLink'
 import FacebookLink from './FacebookLink'
 import LinkedinLink from './LinkedinLink'
-import './Menu.css'
+import './styles/Menu.css'
 
 function Menu(props){
 

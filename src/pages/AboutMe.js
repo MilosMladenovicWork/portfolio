@@ -6,7 +6,7 @@ import DotDetail from '../components/DotDetail'
 import ProjectImage from '../components/ProjectImage'
 import BigDetail from '../components/BigDetail'
 import CanvasThreeJs from '../components/CanvasThreeJs'
-import './AboutMe.css'
+import './styles/AboutMe.css'
 import Image from '../images/project.png'
 
 function AboutMe(props){

@@ -8,7 +8,7 @@ import ButtonGlowing from './ButtonGlowing'
 import FixedDownBar from './FixedDownBar'
 import ButtonLeft from './ButtonLeft'
 import ButtonRight from './ButtonRight'
-import './ProjectPageProject.css'
+import './styles/ProjectPageProject.css'
 
 
 function ProjectPageProject(props){
