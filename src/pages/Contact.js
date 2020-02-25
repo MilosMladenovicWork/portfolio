@@ -125,35 +125,6 @@ function Contact(props){
         <InputField colors={props.colors} form={form} name={'name'} placeholder={'Name'} type={'text'} changeHandler={changeHandler}/>
         <InputField colors={props.colors} form={form} name={'email'} placeholder={'Email'} type={'email'} changeHandler={changeHandler}/>
         <InputTextarea colors={props.colors} form={form} name={'message'} placeholder={'Message'} changeHandler={changeHandler}/>
-        {/* <input 
-          onChange={(e)=>{changeHandler(e)}}
-          type='text' 
-          value={form.name}
-          placeholder='Name' 
-          name='name' 
-          style={{
-            borderBottom:`3px solid ${props.colors.textColor}`,
-            color:props.colors.textColor}}
-        />
-        <input 
-          onChange={(e)=>{changeHandler(e)}}
-          value={form.email}
-          type='email' 
-          placeholder='Email' 
-          name='email' 
-          style={{
-            borderBottom:`3px solid ${props.colors.textColor}`,
-            color:props.colors.textColor}}
-        /> */}
-        {/* <textarea 
-          onChange={(e)=>{changeHandler(e)}}
-          value={form.message}
-          placeholder='Message'
-          name='message'
-          style={{
-            borderBottom:`3px solid ${props.colors.textColor}`,
-            color:props.colors.textColor}}>
-        </textarea> */}
         <ButtonGlowing
           colors={props.colors} 
           submit={form.submit} 
