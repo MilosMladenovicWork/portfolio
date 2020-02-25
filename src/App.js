@@ -192,6 +192,8 @@ function App() {
     })
   }
 
+  document.body.style.backgroundColor = mainColor;
+
   return (
     <div className="App" ref={appContainer} style={{backgroundColor:mainColor}}>
       <Menu colors={{mainColor, accentColor, textColor, shadow}} openMenu={openMenu} toggleMenu={toggleMenu}/>

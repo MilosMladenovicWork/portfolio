@@ -6,6 +6,20 @@
   overflow:hidden;
 }
 
+::-webkit-scrollbar{
+  width:0.75vw;
+  background-color:rgba(0,0,0,0);
+}
+
+body{
+  transition:0.5s;
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius:10px;
+  background-color:gray;
+}
+
 button:focus{
   outline: none;
 }
